@@ -1,2 +1,2 @@
-# branch_name_extention
-branch_name_extention
+# branch_namer_extention
+branch_namer_extention
