@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .button-style {
+            margin-top: 5px;
+            color: white;
+            font-weight: bold;
+            height: 30px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(119, 216, 211);
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+        #taskName {
+            resize: none;
+            display: flex;
+            width: 350px;
+            height: auto;
+            border-radius: 5px;
+            border-width: 1px;
+            font-size:14px;
+            flex-wrap: wrap;
+        }
+    </style>
+    <body>
+        <textarea id="taskName" rows="4" type="text"></textarea>
+        <div class="button-container">
+            <button id="submitButton" class="button-style" type="submit">Format and copy</button>
+        </div>
+        <script src="menu.js"></script>
+    </body>
+</html>
