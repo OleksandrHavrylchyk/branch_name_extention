@@ -19,11 +19,15 @@ function formatString(str) {
                             .join('_')
                             .toLowerCase();
 
-    if(formatedString.startsWith('task')) {
+    if (formatedString.startsWith('product_backlog_item')) {
+        return 'feature/' + formatedString.replace('product_backlog_item_', 'story-');       
+    }
+    
+    if (formatedString.startsWith('task')) {
         return 'feature/' + formatedString.replace('task_', 'task-');       
     }
 
-    if(formatedString.startsWith('bug')) {
+    if (formatedString.startsWith('bug')) {
         return 'fix/' + formatedString.replace('bug_', 'bug-');
     }
     
